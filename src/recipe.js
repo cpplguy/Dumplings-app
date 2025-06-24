@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import img5 from "./rolling-pin-1680702_640.png";
 import Section from "./section.js";
 export default function Recipe(){

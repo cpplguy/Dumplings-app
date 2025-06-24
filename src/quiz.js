@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Section from "./section.js";
 import img5 from "./Blog_Quiz_Cover-01.png";
 export default function Quiz() {

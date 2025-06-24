@@ -8,7 +8,7 @@ export default function DumplingWords() {
       setTimeout(() => {
         setLetters(true);
       }, props.time - 200);
-    }, []);
+    }, [props.time]);
     return (
       <>
         <div>
@@ -43,10 +43,10 @@ export default function DumplingWords() {
         </nav>
         <div id="image-container">
           <Component time={Math.random() * 1000}>
-            <img src={image} className="image" style = {{animation: `rotate ${Math.random() * 200}s linear infinite`}}/>
+            <img src={image} alt = "dumplings" className="image" style = {{animation: `rotate ${Math.random() * 200}s linear infinite`}}/>
           </Component>
           <Component time={Math.random() * 1000 + 500}>
-            <img src={image2} className="image" style = {{animation: `rotate ${Math.random() * 250}s linear infinite`}}/>
+            <img src={image2} alt = "dumplings" className="image" style = {{animation: `rotate ${Math.random() * 250}s linear infinite`}}/>
           </Component>
         </div>
       </div>

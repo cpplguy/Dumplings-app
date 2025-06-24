@@ -19,7 +19,7 @@ function App() {
   }, []);
   return (
     <>
-    <img src = {logo} className = "react"/>
+    <img src = {logo} className = "react" alt = "react"/>
     <DumplingWords/>
     <Introduction />
     <History/>
