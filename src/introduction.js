@@ -15,7 +15,7 @@ export function Introduction() {
        <p>
         <strong>Dumplings</strong> {" "} are traditional foods in many cultures around
         the world, primarily{" "}
-        <a href="https://en.wikipedia.org/wiki/China" target="_blank">
+        <a href="https://en.wikipedia.org/wiki/China" target="_blank" rel = "noreferrer">
           in China</a>, where it was made. Ever since its invention, it has been a staple in Asian culture.
         
       </p>
