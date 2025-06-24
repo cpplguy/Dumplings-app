@@ -1,24 +1,33 @@
 import logo from './logo.svg';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import './App.css';
-
+import DumplingWords from "./header.js"
+import {Introduction}from "./introduction.js";
+import History from "./history.js";
+import Recipe from "./recipe.js"
+import Footer from "./footer.js";
+import Quiz from "./quiz.js";
+import {Minigame} from "./minigame.js"
 function App() {
+    useEffect(() => {
+    AOS.init({
+      duration: 1500
+    });
+    console.log("Enjoy my dumplings website. Email me for bugs and stuffos.")
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <img src = {logo} className = "react"/>
+    <DumplingWords/>
+    <Introduction />
+    <History/>
+    <Recipe/>
+    <Quiz/>
+    <Minigame/>
+    <Footer/>
+    </>
   );
 }
 
